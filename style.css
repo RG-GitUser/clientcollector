@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 15px;
+  width: 350px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+#results {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.contact-card {
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.contact-card strong {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.contact-info {
+  margin: 4px 0;
+}
+
+.no-results {
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
+
+#export-buttons {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.export-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.export-btn:hover {
+  background-color: #0056b3;
+}
+
+.export-btn:active {
+  background-color: #004085;
+} 

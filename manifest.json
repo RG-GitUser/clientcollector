@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "ClientCollect",
+  "version": "1.0",
+  "description": "Extracts emails and phone numbers from web pages.",
+  "permissions": ["scripting", "activeTab", "downloads"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ClientCollect - Extract Contact Information",
+    "default_icon": {
+      "16": "clientconnect-icon.png",
+      "32": "clientconnect-icon.png",
+      "48": "clientconnect-icon.png",
+      "128": "clientconnect-icon.png"
+    }
+  },
+  "icons": {
+    "16": "clientconnect-icon.png",
+    "32": "clientconnect-icon.png",
+    "48": "clientconnect-icon.png",
+    "128": "clientconnect-icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+} 
