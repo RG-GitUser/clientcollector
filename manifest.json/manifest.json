@@ -2,21 +2,16 @@
   "manifest_version": 3,
   "name": "ClientCollect",
   "version": "1.0",
-  "description": "Extracts emails and phone numbers from the page you're viewing.",
+  "description": "Extracts emails and phone numbers from web pages.",
   "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
   "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "icons/icon16.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
-    }
+    "default_popup": "popup.html"
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["content.js"]
     }
-  ],
-  "host_permissions": ["<all_urls>"]
+  ]
 }
